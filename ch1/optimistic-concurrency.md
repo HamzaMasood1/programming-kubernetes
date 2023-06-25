@@ -9,7 +9,7 @@ func main() {
 			break
 		}
 
-		// <update-the-world-and-foo>
+		<update-the-world-and-foo>
 
 		_, err = client.Update(foo)
 		if err != nil && errors.IsConflict(err) {
