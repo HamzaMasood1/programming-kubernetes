@@ -1,4 +1,4 @@
-package main
+package ch1
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-func main() {
+func GetPodInfo() {
 	ctx := context.TODO()
 	kubeconfig := flag.String("kubeconfig", "/Users/hmasood/.kube/kind", "kubeconfig file")
 	flag.Parse()
@@ -23,6 +23,6 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println(pod.Name)
+	fmt.Println(pod.ObjectMeta.Labels)
 
 }
