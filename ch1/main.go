@@ -1,8 +1,8 @@
 package main
 
-import "github.com/HamzaMasood1/programming-kubernetes/ch1/ch1"
+import "github.com/HamzaMasood1/programming-kubernetes/ch1/ch3"
 
 func main() {
-	ch1.GetPodInfo()
-	ch1.CreateInformer()
+	ch3.GetPodInfo()
+	ch3.CreateInformer()
 }

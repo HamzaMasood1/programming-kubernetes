@@ -1,4 +1,4 @@
-package ch1
+package ch3
 
 import (
 	"flag"
@@ -40,4 +40,6 @@ func CreateInformer() {
 		fmt.Println(err)
 	}
 	fmt.Println(pod)
+	//caches all objects of a resource in all namespaces in the store.
+	//if that is too much then use NewFilteredSharedInformerFactory
 }
